@@ -59,5 +59,53 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   background-image: none !important;
 }
 
-@media (min-width: @screen-sm-min) {  }
+/* carosel */
 
+.carousel-control{
+  border:none;
+  background: none;
+  font-size: 32px;
+  top: 60%;
+}
+
+.carousel-indicators{
+  bottom: 15px;
+  right:50%;
+}
+
+.carousel-control.right{
+  right:30px;
+}
+
+.carousel-caption{
+  bottom: 30px;
+  background: none;
+}
+
+.col-md-7{
+  width: 60%;
+}
+
+.col-md-5{
+  float: right;
+}
+
+/* mobile */
+
+@media screen and (max-width:599px) {
+
+  /* sign up */
+
+  input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  padding: 10px 40px;
+  }
+
+  .carousel-caption{
+    left: 0px;
+    text-align: center;
+  }
+
+  .lead {
+    display: none;
+  }
+}
